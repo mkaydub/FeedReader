@@ -101,28 +101,25 @@ $(function() {
 
   /* New test suite named "New Feed Selection" */
   describe('New Feed Selection', function() {
-
+    /* Test that ensures when a new feed is loaded
+     * by the loadFeed function that the content actually changes.
+     * loadFeed() is asynchronous.
+     */
     var feed, newFeed;
 
     beforeEach(function(done) {
       loadFeed(0, function() {
         feed = $('.feed').html();
-        //new feed
-        loadFeed(1, function() {
-          newFeed = $('.feed').html();
-          done();
-        });
+        done();
       });
-
-
     });
-    /* Test that ensures when a new feed is loaded
-     * by the loadFeed function that the content actually changes.
-     * loadFeed() is asynchronous.
-     */
+
     it('content actually changes', function(done) {
-      expect(newFeed).not.toBe(feed);
-      done();
+      loadFeed(2, function() {
+        newFeed = $('.feed').html();
+        done();
+      });
+      expect(newFeed).not.toBe(feed); // expect newFeed to be different than feed
     });
   });
 }());
