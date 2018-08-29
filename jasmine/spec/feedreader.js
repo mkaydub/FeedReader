@@ -43,6 +43,8 @@ $(function() {
     it('has defined name', function() {
       for (let feed of allFeeds) {
         expect(feed.name).toBeDefined();
+        expect(typeof feed.name).toBe('string');
+        expect(feed.name).not.toBe('');
       }
     });
   });
