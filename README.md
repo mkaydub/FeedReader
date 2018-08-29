@@ -2,6 +2,7 @@
 
 **Directives given by Udacity:** In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
 
+## Project Rubric
 Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric)
 
 ## Tests
@@ -18,3 +19,9 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 * Download zip file or clone repository
 * Open index.html file in browser
 * Scroll to see Jasmine tests passed!
+
+### Languages Used
+* HTML5
+* CSS
+* JavaScript
+* Jasmine 
