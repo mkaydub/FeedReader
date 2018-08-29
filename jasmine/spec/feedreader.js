@@ -72,10 +72,10 @@ $(function() {
     it('menu changes visibility on click', function() {
 
       menuIcon.click();
-      expect(menu.classList.contains('menu-hidden')).toBe(false); //display when clicked
+      expect(menu.classList.contains('menu-hidden')).toBe(false); //expect display when clicked
 
       menuIcon.click();
-      expect(menu.classList.contains('menu-hidden')).toBe(true); //hide when clicked again
+      expect(menu.classList.contains('menu-hidden')).toBe(true); //expect hide when clicked again
     });
   });
 
