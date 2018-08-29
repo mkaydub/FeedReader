@@ -32,7 +32,7 @@ $(function() {
     it('has defined URL', function() {
       for (let feed of allFeeds) {
         expect(feed.url).toBeDefined();
-      }
+      };
 
     });
 
