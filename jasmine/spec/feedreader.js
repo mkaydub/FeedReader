@@ -110,15 +110,13 @@ $(function() {
     beforeEach(function(done) {
       loadFeed(0, function() {
         feed = $('.feed').html();
-        done();
+        loadFeed(2, function() {
+          newFeed = $('.feed').html();
+          done();
+        });
       });
     });
-
-    it('content actually changes', function(done) {
-      loadFeed(2, function() {
-        newFeed = $('.feed').html();
-        done();
-      });
+    it('content actually changes', function() {
       expect(newFeed).not.toBe(feed); // expect newFeed to be different than feed
     });
   });
