@@ -42,10 +42,10 @@ $(function() {
      */
     it('has defined name', function() {
       for (let feed of allFeeds) {
-        expect(feed.name).toBeDefined();
-        expect(typeof feed.name).toBe('string');
-        expect(feed.name).not.toBe('');
-      }
+        expect(feed.name).toBeDefined(); //expect name to be defined
+        expect(typeof feed.name).toBe('string'); //expect name to be a string
+        expect(feed.name).not.toBe(''); //expect string not to be empty
+      };
     });
   });
 
